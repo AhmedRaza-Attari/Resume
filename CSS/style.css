@@ -1,0 +1,31 @@
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Container */
+.container {
+    width: 595.276px;
+    height: 841.89px;
+    display: flex;
+}
+
+/* LEFT BOX */
+.leftBox {
+    width: 35%;
+    height: 100%;
+    background-color: #2C3D4D;
+}
+
+/* RIGHT BOX */
+.rightBox {
+    width: 65%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+/* git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a */
