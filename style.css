@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: lightblue;
+}
+
+/* Main DIV */
+#root {
+    font-family: 'Open Sans', sans-serif;
+    width: 595.276px;
+    height: 841.89px;
+    background-color: #fff;
+    position: relative;
+}
+
+p {
+    font-size: 12px;
+}
+
+/* ********************************************************** */
+/*                          Left Side                         */
+/* ********************************************************** */
+
+#root .leftSide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px;
+    width: 40%;
+    height: 841.89px;
+    background-color: rgb(46, 46, 48);
+    
+}
+
+/* Left side Paragraph color "white"  */
+.leftSide p {
+    color: #fff;
+}
+
+                                                /* SECTION # 1 */
+/* Image and Title */
+.image_Title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}  
+
+/* My Image */
+.myPic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 7px solid rgb(183, 129, 83);
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+/* User Name */
+.name {
+    font-size: 20px;
+    color: rgb(183, 129, 83);
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Job Title */
+.jobTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+                                                /* SECTION # 2 */
+/* Profile Heading */
+.profileHeading, .followMeHeading {
+    margin: 10px 0;
+    width: 60%;
+    color: #fff;
+    text-align: left;
+    background-color: rgb(183, 129, 83);
+    display: inline-block;
+    padding: 4px 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    letter-spacing: 1px;
+}
+
+/* Profile Text */
+.profileText {
+    text-align: justify;
+    /* font-size: 12px; */
+    text-indent: 45px;
+    margin-bottom: 10px;
+}
+
+                                                /* SECTION # 3 */
+/* Font Awesome Icon and Link DIV */
+.icon_Link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8px 0;
+}
+
+/* Font Awesome Icon */
+.icon_Link i {
+    margin-right: 13px;
+    color: #fff;
+}
+
+/* Links of Social media platforms */
+.link {
+    /* margin-left: 8px; */
+    /* font-size: 12px; */
+    line-height: 14px;
+    text-align: left;
+}
+
+/* 'a' Tag of Social media platforms */
+.link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.margin {
+    margin-bottom: 10px;
+}
+
+/* ********************************************************** */
+/*                          Right Side                        */
+/* ********************************************************** */
+
+.rightSide {
+    padding: 12px;
+    width: 60%;
+    height: 841.89px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Top Margin */
+.topMargin {
+    margin: 20px 5px;
+}
+
+/* Icon Heading */
+.icon_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+/* Top Margin of Icon */
+.topMargin i {
+    margin-right: 18px;
+}
+
+/* Right side heading of Resume */
+.rightSideHeading {
+    width: 70%;
+    background-color: rgb(183, 129, 83);
+    padding: 4px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Text of the year mention */
+.year_Text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.bigText {
+    font-size: 13px;
+    margin-left: 25px;
+}
+
+.colorText {
+    color: rgb(183, 129, 83);
+}
+
+/* Skills Section */
+.table {
+    width: 70%;
+    margin: auto;
+    line-height: 30px;
+}
+
+.tableChild {
+    width: 50%;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.year {
+    font-size: 12px;
+}

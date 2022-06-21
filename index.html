@@ -5,75 +5,228 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <!-- https://fontawesome.com/v4/icons/ -->
-    <title> Ahmed Raza Resume </title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- React Website Links -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title> Resume Without React Install</title>
 </head>
 
 <body>
 
-    <!-- MAIN CONTAINER -->
-    <div class="container">
+    <script type="text/babel">
+        const root = document.getElementById('root');
 
-        <!-- LEFT BOX -->
-        <div class="leftBox">
+        // Personal Image
+        function PersonalImage(props) {
+            return <img src={props.src} className="myPic" />
+        }
 
-            <!-- 01. Personal Image -->
-            <div class="image">
-                <img src="./Images/ahmed.jpg" alt="Ahmed Raza Image">
+        // User Name and Designation
+        function Name(details) {
+            return <div>
+                <h1 className="name"> {details.username} </h1>
+                <p className="jobTitle"> Front End Developer </p>
             </div>
+        }
 
-            <!-- 02. About me -->
-            <div class="headingDiv">
-                <p class="heading"> About Me </p>
-                <p>
-                    Highly creative and multitalented Web Developer. Motivated designer and developer with experience creating custom websites through Html, Css and Javascript.
-                </p>
-                <p>
-                    Accustomed to performing in deadline-driven environments with an emphasis on working within budget. 
-                </p>
+        // SECTION 1
+        // User Image and Details
+        function ImageandTitle() {
+            return <div className="image_Title">
+                <PersonalImage src="./Images/ahmed.jpg"></PersonalImage>
+                <Name username="AHMED RAZA ATTARI"></Name>
             </div>
+        }
 
-            <!-- 03. Contact Me -->
-            <div class="headingDiv">
-                <p class="heading"> Contact Me </p>
-                <div class="icon_Detail">
-                    <i class="fa fa-2x fa-phone" aria-hidden="true"></i>
-                    <span class="one"> 0344-0922600 </span>
+        // SECTION 2
+        // User Profile and Objective
+        function ProfileAndText() {
+            return <div>
+                <h3 className="profileHeading"> Profile </h3>
+                <p className="profileText"> Self-motivated IT professional with deep knowledge and proficiency in HTML, CSS, Bootstrap, JavaScript, Git and mobile responsive website development. Seeks the position of Front-End Web Developer. </p>
+            </div>
+        }
+
+        // SECTION 3
+        // User Follow Me
+        function FollowMe() {
+            return <div className="margin">
+                <h3 className="followMeHeading"> Follow Me </h3>
+                <div className="icon_Link">
+                    <i class="fab fa-facebook-square fa-2x" ></i>
+                    <p className="link">
+                        <a href="https://www.facebook.com/profile.php?id=100006798405450" target="_blank">www.facebook.com/profile.php?id=100006798405450</a>
+                    </p>
                 </div>
-                <div class="icon_Detail">
-                    <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
-                    <span class="two"> ahmedraza8325@gmail.com </span>
+                <div className="icon_Link">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    <p className="link">
+                        <a href="https://www.linkedin.com/in/ahmed-raza-844332169" target="_blank">www.linkedin.com/in/ahmed-raza-844332169</a>
+                    </p>
                 </div>
-                <div class="icon_Detail">
-                    <i class="fa fa-2x fa-map-marker" aria-hidden="true"></i>
-                    <span class="three"> 76/77 Rodrick Street, Savitry Building, Soldier Bazar No. 1, Karachi. </span>
+                <div className="icon_Link">
+                    <i class="fab fa-github-square fa-2x"></i>
+                    <p className="link">
+                        <a href="https://github.com/AhmedRaza1211" target="_blank">github.com/AhmedRaza1211</a>    
+                    </p>
+                </div>
+                <div className="icon_Link">
+                    <i class="fas fa-portrait fa-2x"></i>
+                    <p className="link">
+                        <a href="https://ahmed-attari.web.app/" target="_blank">https://ahmed-attari.web.app/</a>    
+                    </p>
                 </div>
             </div>
+        }
 
-            <!-- 03. Contact Me -->
-            <!-- <div class="headingDiv">
-                <div class="iconHeading">
-                    <i class="fa fa-lg fa-user" aria-hidden="true"></i>
-                    <p class="heading"> Contact Me </p>
+        // SECTION 4
+        // User Contact 
+        function Contact() {
+            return <div>
+                <h3 className="followMeHeading"> Follow Me </h3>   
+                <div className="icon_Link">
+                    <i class="fas fa-phone-square-alt fa-2x"></i>    
+                    <p> 0344-0922600 <br/> 0331-8325001</p>
+                </div> 
+                <div className="icon_Link">
+                    <i class="fas fa-envelope-square fa-2x"></i>  
+                    <p> ahmedraza8325@gmail.com </p>
+                </div> 
+                <div className="icon_Link">
+                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p> 76/77 Rodrick Street, Savitry Building, 1st floor, Soldier Bazar No.1, Karachi. </p>
+                </div> 
+            </div>
+        }
+
+        // SECTION 5
+        // User Education
+        function Education() {
+            return <div className="topMargin">
+                <div className="icon_heading">
+                    <i class="fas fa-user-graduate fa-2x"></i>
+                    <h3 className="rightSideHeading"> Education </h3>
                 </div>
-            </div> -->
+                <div className="year_Text">
+                    <div className="year"> 2021- <br/>  </div>    
+                    <div> 
+                        <p className="bigText"> <span className="colorText"> Bachelor in Computer Science (Enroll)</span> <br/> Ilma University </p>    
+                    </div>
+                </div>
+                <div className="year_Text">
+                    <div className="year"> 2018- <br/> 2019 </div>    
+                    <div> 
+                        <p className="bigText"> <span className="colorText"> Intermediate in Commerce</span> <br/> Goverment College of Commerce and Economics </p>    
+                    </div>
+                </div>
+                <div className="year_Text">
+                    <div className="year"> 2014- <br/> 2015 </div>    
+                    <div> 
+                        <p className="bigText"> <span className="colorText"> Matriculation in Computer Science </span> <br/> Nasra Higher Secondary School </p>    
+                    </div>
+                </div>
+            </div>
+        }
 
-            <!-- LEFT BOX CLOSE -->
-        </div>
+        function Certification() {
+            return <div className="topMargin">
+                <div className="icon_heading">
+                    <i class="fas fa-award fa-2x"></i>
+                    <h3 className="rightSideHeading"> Certification </h3>
+                </div>
+                <div className="year_Text">
+                    <div className="year"> 2021 </div>    
+                    <div> 
+                        <p className="bigText"> <span className="colorText"> Web and Mobile Applicaton Development </span> <br/> Jawan Pakistan </p>    
+                    </div>
+                </div>
+                <div className="year_Text">
+                    <div className="year"> 2021 </div>    
+                    <div> 
+                        <p className="bigText"> <span className="colorText"> Web Graphics and Mobile App Development </span> <br/> Instituite of Business Administration(IBA) </p>    
+                    </div>
+                </div>
+                <div className="year_Text">
+                    <div className="year"> 2018 </div>    
+                    <div> 
+                        <p className="bigText"> <span className="colorText"> English Works Program </span> <br/> Pakistan American Cultural Center </p>    
+                    </div>
+                </div>
+                <div className="year_Text">
+                    <div className="year"> 2017 </div>    
+                    <div> 
+                        <p className="bigText"> <span className="colorText"> Hardware and Networking </span> <br/> Noor College of Professional Education </p>    
+                    </div>
+                </div>
+                <div className="year_Text">
+                    <div className="year"> 2015 </div>    
+                    <div> 
+                        <p className="bigText"> <span className="colorText"> Certificate in Information Technology </span> <br/> Skill Development Council </p>    
+                    </div>
+                </div>
+                <div className="year_Text">
+                    <div className="year"> 2015 </div>    
+                    <div> 
+                        <p className="bigText"> <span className="colorText"> Certificate in Information Technology </span> <br/> Noor College of Professional Education </p>    
+                    </div>
+                </div>
+            </div>
+        }
 
+        function Skills() {
+            return <div className="topMargin"> 
+                <div className="icon_heading">
+                    <i class="fas fa-certificate fa-2x"></i>
+                    <h3 className="rightSideHeading"> Certification </h3>
+                </div>
+                <div className="table">
+                    <div className="tableChild"> React Native </div>   
+                    <div className="tableChild"> React </div>   
+                    <div className="tableChild"> JavaScript </div>   
+                    <div className="tableChild"> Git </div>   
+                    <div className="tableChild"> Bootstrap </div>   
+                    <div className="tableChild"> CSS </div>   
+                    <div className="tableChild"> HTML </div>   
+                    <div className="tableChild"> Illustrator </div>   
+                    <div className="tableChild"> Photoshop </div>   
+                    <div className="tableChild"> MS Office </div>   
+                </div>
+            </div>
+        }
 
-        <!-- RIGHT BOX -->
-        <div class="rightBox">
+        function LeftSide() {
+            return <div className="leftSide">
+                <ImageandTitle></ImageandTitle>
+                <ProfileAndText></ProfileAndText>
+                <FollowMe></FollowMe>
+                <Contact></Contact>
+            </div>
+        }
 
-            <!-- RIGHT BOX CLOSE -->
-        </div>
+        function RightSide() {
+            return <div className="rightSide">
+                <Education></Education>
+                <Certification></Certification>
+                <Skills></Skills>
+            </div>
+        }
 
+        function AllThingsRender() {
+            return <div>
+                <LeftSide></LeftSide>
+                <RightSide></RightSide>    
+            </div>
+        }
+        ReactDOM.render(<AllThingsRender></AllThingsRender>, root);
 
-        <!-- MAIN CONTAINER CLOSE -->
-    </div>
+    </script>
 
+    <div id="root"></div>
 
 </body>
 
