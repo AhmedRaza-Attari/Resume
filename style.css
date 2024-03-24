@@ -67,7 +67,7 @@ p {
 
 /* User Name */
 .name {
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(183, 129, 83);
     margin-bottom: 0;
     letter-spacing: 0.5px;
@@ -124,6 +124,7 @@ p {
     /* font-size: 12px; */
     line-height: 14px;
     text-align: left;
+    font-size: 10px;
 }
 
 /* 'a' Tag of Social media platforms */
@@ -152,7 +153,8 @@ p {
 
 /* Top Margin */
 .topMargin {
-    margin: 20px 5px;
+    /* margin: 20px 5px; */
+    margin: 20px 0px;
 }
 
 /* Icon Heading */
@@ -161,7 +163,8 @@ p {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
+    margin-bottom: 8px;
 }
 
 /* Top Margin of Icon */
@@ -187,13 +190,15 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    /* justify-content: space-between; */
     align-items: center;
-    margin: 10px 0;
+    margin: 10px 4px;   
+    width: 100%;
 }
 
 .bigText {
     font-size: 13px;
-    margin-left: 25px;
+    margin-left: 12px;
 }
 
 .colorText {
@@ -202,17 +207,33 @@ p {
 
 /* Skills Section */
 .table {
-    width: 70%;
+    width: 77%;
     margin: auto;
     line-height: 30px;
 }
 
 .tableChild {
-    width: 50%;
+    width: 30%;
     display: inline-block;
     font-size: 12px;
 }
 
 .year {
+    font-size: 11px;
+}
+
+li {
     font-size: 12px;
+}
+
+
+.bigText1 {
+    font-size: 13px;
+    /* margin-left: 12px; */
+}
+
+.year1 {
+    font-size: 11px;
+    margin-right: 3px;
+    width: 30%;
 }
