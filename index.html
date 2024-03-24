@@ -30,7 +30,7 @@
         function Name(details) {
             return <div>
                 <h1 className="name"> {details.username} </h1>
-                <p className="jobTitle"> Front End Developer </p>
+                <p className="jobTitle"> Full Stack Developer </p>
             </div>
         }
 
@@ -39,7 +39,7 @@
         function ImageandTitle() {
             return <div className="image_Title">
                 <PersonalImage src="./Images/ahmed.jpg"></PersonalImage>
-                <Name username="AHMED RAZA ATTARI"></Name>
+                <Name username="AHMED RAZA"></Name>
             </div>
         }
 
@@ -48,7 +48,7 @@
         function ProfileAndText() {
             return <div>
                 <h3 className="profileHeading"> Profile </h3>
-                <p className="profileText"> Self-motivated IT professional with deep knowledge and proficiency in HTML, CSS, Bootstrap, JavaScript, Git and mobile responsive website development. Seeks the position of Front-End Web Developer. </p>
+                <p className="profileText"> Self-motivated IT professional with deep knowledge and proficiency in HTML, CSS, JavaScript React.js, Bootstrap, Tailwind Git and basics of Node.js, Express.js, and MongoDB. Experienced in mobile responsive website development. Seeks the position of Full Stack Developer. </p>
             </div>
         }
 
@@ -58,21 +58,15 @@
             return <div className="margin">
                 <h3 className="followMeHeading"> Follow Me </h3>
                 <div className="icon_Link">
-                    <i class="fab fa-facebook-square fa-2x" ></i>
-                    <p className="link">
-                        <a href="https://www.facebook.com/profile.php?id=100006798405450" target="_blank">www.facebook.com/profile.php?id=100006798405450</a>
-                    </p>
-                </div>
-                <div className="icon_Link">
                     <i class="fab fa-linkedin fa-2x"></i>
                     <p className="link">
-                        <a href="https://www.linkedin.com/in/ahmed-raza-844332169" target="_blank">www.linkedin.com/in/ahmed-raza-844332169</a>
+                        <a href="https://www.linkedin.com/in/ahmedrazaattari12/" className="smallText" target="_blank">linkedin.com/in/ahmedrazaattari12/</a>
                     </p>
                 </div>
                 <div className="icon_Link">
                     <i class="fab fa-github-square fa-2x"></i>
                     <p className="link">
-                        <a href="https://github.com/AhmedRaza1211" target="_blank">github.com/AhmedRaza1211</a>    
+                        <a href="github.com/AhmedRaza-Attari" target="_blank">github.com/AhmedRaza1211</a>    
                     </p>
                 </div>
                 <div className="icon_Link">
@@ -88,10 +82,10 @@
         // User Contact 
         function Contact() {
             return <div>
-                <h3 className="followMeHeading"> Follow Me </h3>   
+                <h3 className="followMeHeading"> Contact </h3>   
                 <div className="icon_Link">
                     <i class="fas fa-phone-square-alt fa-2x"></i>    
-                    <p> 0344-0922600 <br/> 0331-8325001</p>
+                    <p> 0344-0922600 </p>
                 </div> 
                 <div className="icon_Link">
                     <i class="fas fa-envelope-square fa-2x"></i>  
@@ -106,6 +100,27 @@
 
         // SECTION 5
         // User Education
+        function Experience() {
+            return <div className="topMargin">
+                <div className="icon_heading">
+                    <i class="fas fa-solid fa-user-tie fa-2x"></i>
+                    <h3 className="rightSideHeading"> Experience </h3>
+                </div>
+                <div className="year_Text">
+                    <div className="year1"> 2/2024 - Present </div>    
+                    <div> 
+                        <p className="bigText1"> <span className="colorText"> React.js Developer </span> <br/> Xtecsoft </p>  
+                    </div>
+                </div>
+                <div className="year_Text">
+                    <div className="year1"> 11/2023 - 1/2024 </div>    
+                    <div> 
+                        <p className="bigText1"> <span className="colorText"> Frontend Developer </span> <br/> Avanza Solution </p>    
+                    </div>
+                </div>
+            </div>
+        }
+
         function Education() {
             return <div className="topMargin">
                 <div className="icon_heading">
@@ -113,21 +128,21 @@
                     <h3 className="rightSideHeading"> Education </h3>
                 </div>
                 <div className="year_Text">
-                    <div className="year"> 2021- <br/>  </div>    
+                    <div className="year"> 2021 - 2024 </div>    
                     <div> 
-                        <p className="bigText"> <span className="colorText"> Bachelor in Digital Marketing (Enrolled)</span> <br/> Ilma University </p>    
+                        <p className="bigText"> <span className="colorText"> Bachelor's in Digital Marketing </span> <br/> Ilma University (Enrolled) </p>    
                     </div>
                 </div>
                 <div className="year_Text">
-                    <div className="year"> 2018- <br/> 2019 </div>    
+                    <div className="year"> 2018 - 2019  </div>    
                     <div> 
-                        <p className="bigText"> <span className="colorText"> Intermediate in Commerce</span> <br/> Goverment College of Commerce and Economics </p>    
+                        <p className="bigText"> <span className="colorText"> Intermediate in Commerce </span> <br/> Goverment Commerce </p>    
                     </div>
                 </div>
                 <div className="year_Text">
-                    <div className="year"> 2014- <br/> 2015 </div>    
+                    <div className="year"> 2014 - 2015  </div>    
                     <div> 
-                        <p className="bigText"> <span className="colorText"> Matriculation in Computer Science </span> <br/> Nasra Higher Secondary School </p>    
+                        <p className="bigText"> <span className="colorText"> Matriculation in Computer Science </span> <br/> Nasra Higher Secondary School  </p>    
                     </div>
                 </div>
             </div>
@@ -142,7 +157,7 @@
                 <div className="year_Text">
                     <div className="year"> 2021 </div>    
                     <div> 
-                        <p className="bigText"> <span className="colorText"> MERN Stack </span> <br/> Fast University </p>    
+                        <p className="bigText"> <span className="colorText"> MERN Stack </span> <br/> Jawan Pakistan </p>    
                     </div>
                 </div>
                 <div className="year_Text">
@@ -185,16 +200,15 @@
                     <h3 className="rightSideHeading"> Certification </h3>
                 </div>
                 <div className="table">
-                    <div className="tableChild"> Express </div>   
-                    <div className="tableChild"> Node </div>   
-                    <div className="tableChild"> React </div>   
-                    <div className="tableChild"> JavaScript </div>   
+                    <div className="tableChild"> React.js </div>   
+                    <div className="tableChild"> Node.js </div>   
+                    <div className="tableChild"> Express.js </div>   
                     <div className="tableChild"> Typescript </div>   
-                    <div className="tableChild"> Tailwing </div>   
+                    <div className="tableChild"> JavaScript </div>   
+                    <div className="tableChild"> Git & Github </div>   
                     <div className="tableChild"> Bootstrap </div>   
-                    <div className="tableChild"> CSS </div>   
-                    <div className="tableChild"> HTML </div>   
-                    <div className="tableChild"> MS Office </div>   
+                    <div className="tableChild"> Material UI </div>   
+                    <div className="tableChild"> HTML & CSS </div>   
                 </div>
             </div>
         }
@@ -210,6 +224,7 @@
 
         function RightSide() {
             return <div className="rightSide">
+                <Experience/>
                 <Education></Education>
                 <Certification></Certification>
                 <Skills></Skills>
