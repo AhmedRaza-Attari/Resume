@@ -19,7 +19,7 @@ body {
     height: 841.89px;
     background-color: #fff;
     position: relative;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
 }
 
 p {
@@ -150,6 +150,7 @@ p {
     position: absolute;
     right: 0;
     top: 0;
+    border: 1px solid lightgray;
 }
 
 /* Top Margin */
