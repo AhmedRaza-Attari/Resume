@@ -19,6 +19,7 @@ body {
     height: 841.89px;
     background-color: #fff;
     position: relative;
+    border: 1px solid lightgray;
 }
 
 p {
@@ -237,3 +238,4 @@ li {
     margin-right: 3px;
     width: 30%;
 }
+
